@@ -13,7 +13,8 @@
   <label>
   	<?php if ($_POST) {
     $nilai1 = $_POST['nilai1'];
-    if($nilai1 == "")
+    $name1 = $_POST['fname1'];
+    if($nilai1 == "" or $name1 == "")
     {
     	$skor1 = "";
     }elseif($nilai1 < 0)
@@ -47,12 +48,13 @@
   <label>
   	<?php if ($_POST) {
     $nilai2 = $_POST['nilai2'];
-    if($nilai2 == "")
+    $name2 = $_POST['fname2'];
+    if($nilai2 == "" or $name2 == "")
     {
     	$skor2 = "";
-    }elseif($nilai1 < 0)
+    }elseif($nilai2 < 0)
     {
-    	$skor1 = "Nilai tidak boleh negatif";
+    	$skor2 = "Nilai tidak boleh negatif";
     }
     elseif($nilai2 < 40)
     {
@@ -81,12 +83,13 @@
   <label>
   	<?php if ($_POST) {
     $nilai3 = $_POST['nilai3'];
-    if($nilai3 == "")
+    $name3 = $_POST['fname3'];
+    if($nilai3 == "" or $name3 == "")
     {
     	$skor3 = "";
-    }elseif($nilai1 < 0)
+    }elseif($nilai3 < 0)
     {
-    	$skor1 = "Nilai tidak boleh negatif";
+    	$skor3 = "Nilai tidak boleh negatif";
     }
     elseif($nilai3 < 40)
     {
@@ -115,12 +118,13 @@
   <label>
   	<?php if ($_POST) {
     $nilai4 = $_POST['nilai4'];
-    if($nilai4 == "")
+    $name4 = $_POST['fname4'];
+    if($nilai4 == "" or $name4 == "")
     {
     	$skor4 = "";
-    }elseif($nilai1 < 0)
+    }elseif($nilai4 < 0)
     {
-    	$skor1 = "Nilai tidak boleh negatif";
+    	$skor4 = "Nilai tidak boleh negatif";
     }
     elseif($nilai4 < 40)
     {
@@ -149,12 +153,13 @@
   <label>
   	<?php if ($_POST) {
     $nilai5 = $_POST['nilai5'];
-    if($nilai5 == "")
+    $name5 = $_POST['fname5'];
+    if($nilai5 == "" or $name5 == "")
     {
     	$skor5 = "";
-    }elseif($nilai1 < 0)
+    }elseif($nilai5 < 0)
     {
-    	$skor1 = "Nilai tidak boleh negatif";
+    	$skor5 = "Nilai tidak boleh negatif";
     }
     elseif($nilai5 < 40)
     {
